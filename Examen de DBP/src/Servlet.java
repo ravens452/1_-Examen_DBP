@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 //Esto es una forma de llamar al servlet
 //@WebServlet(name = "Servlet")
-public class Servlet extends HttpServlet {
+class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String CUI = request.getParameter("CUI");
         String pass = request.getParameter("pass");
